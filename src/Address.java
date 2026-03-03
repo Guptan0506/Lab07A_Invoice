@@ -8,6 +8,7 @@ public class Address {
 
     // Constructor: Initialize the fields
     public Address(String street, String city, String state, String zipCode) {
+        this.customerName = "";
         this.street = street;
         this.city = city;
         this.state = state;
@@ -15,6 +16,15 @@ public class Address {
     }
 
     // Getters and Setters for each field
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
     public String getStreet() {
         return street;
     }
